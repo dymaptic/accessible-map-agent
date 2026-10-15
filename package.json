@@ -1,0 +1,41 @@
+{
+  "name": "accessible-map-agent",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "dev": "next dev",
+    "build": "prisma generate && node scripts/generate-migration-script.js && next build --webpack",
+    "start": "next start",
+    "lint": "eslint",
+    "generate-migration-script": "node scripts/generate-migration-script.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.71.2",
+    "@getbrevo/brevo": "^3.0.1",
+    "@prisma/adapter-pg": "^7.1.0",
+    "@prisma/client": "^5.22.0",
+    "@prisma/engines": "^5.22.0",
+    "@tailwindcss/typography": "^0.5.19",
+    "@types/pg": "^8.16.0",
+    "dotenv": "^17.2.3",
+    "next": "^16.4.2",
+    "pg": "^8.16.3",
+    "prisma": "^5.22.0",
+    "react": "19.2.1",
+    "react-dom": "19.2.1",
+    "react-markdown": "^10.1.0",
+    "remark-gfm": "^4.0.1"
+  },
+  "devDependencies": {
+    "@arcgis/core": "^4.31.0",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "^16.0.10",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}

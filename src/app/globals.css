@@ -1,0 +1,49 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+
+  /* dymaptic brand colors */
+  --coral: #E24E42;
+  --coral-dark: #C13E34;
+  --coral-light: #F5756B;
+  --teal: #1D809F;
+  --teal-dark: #166680;
+  --teal-light: #2BA3C9;
+  --brand-gray: #A7A7A7;
+  --dark-bg: #1A1A1A;
+  --dark-bg-light: #2D2D2D;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-rubik);
+  --font-mono: var(--font-geist-mono);
+
+  /* dymaptic brand colors */
+  --color-coral: var(--coral);
+  --color-coral-dark: var(--coral-dark);
+  --color-coral-light: var(--coral-light);
+  --color-teal: var(--teal);
+  --color-teal-dark: var(--teal-dark);
+  --color-teal-light: var(--teal-light);
+  --color-brand-gray: var(--brand-gray);
+  --color-dark-bg: var(--dark-bg);
+  --color-dark-bg-light: var(--dark-bg-light);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-rubik), Arial, Helvetica, sans-serif;
+}
